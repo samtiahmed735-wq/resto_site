@@ -144,12 +144,9 @@ header nav a:hover {
 }
 
 /* CONTAINER */
-.contact-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 60px 20px;
-    flex-wrap: wrap;
+contact-container {
+    background: #f5f5f5;
+}
 }
 
 /* BOX */
