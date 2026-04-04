@@ -1,9 +1,6 @@
 /* RESET */
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f8f9fa;
-    color: #333;
+    background: #f5f5f5;
 }
 
 /* HEADER */
@@ -94,11 +91,9 @@ nav a:hover {
 
 /* MENU */
 .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 50px;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
 }
 
 /* CARD */
