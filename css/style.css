@@ -91,9 +91,11 @@ nav a:hover {
 
 /* MENU */
 .menu {
-    background: white;
-    padding: 40px;
-    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
 }
 
 /* CARD */
@@ -144,9 +146,12 @@ header nav a:hover {
 }
 
 /* CONTAINER */
-contact-container {
-    background: #f5f5f5;
-}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
 }
 
 /* BOX */
