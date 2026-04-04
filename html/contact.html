@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact & Order</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <header>
-    <h1>Contact Us 📞</h1>
+    <h1>Contact & Order 🍔</h1>
     <nav>
         <a href="../index.html">Home</a>
         <a href="menu.html">Menu</a>
@@ -18,17 +18,57 @@
 </header>
 
 <section class="contact">
+
     <div class="contact-box">
-        <h2>Get in Touch ✉️</h2>
+
+        <h2>Contact Us 📞</h2>
+
+        <p>📍 Tunis, Tunisia</p>
+        <p>📞 +216 12 345 678</p>
+        <p>📧 myrestaurant@email.com</p>
+
+        <h3>Send Message ✉️</h3>
 
         <form>
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
+            <textarea placeholder="Your Message" rows="3"></textarea>
+            <button type="submit">Send</button>
+        </form>
+
+        <hr>
+
+        <h3>Place an Order 🛒</h3>
+
+        <form>
+
+            <input type="text" placeholder="Your Name" required>
+
+            <select>
+                <option>🍕 Pizza - 30 DT</option>
+                <option>🍝 Pasta - 35 DT</option>
+                <option>🍔 Burger - 25 DT</option>
+                <option>🥗 Salad - 18 DT</option>
+            </select>
+
+            <input type="number" placeholder="Quantity" min="1" required>
+
+            <input type="text" placeholder="Your Address" required>
+
+            <button type="submit">Order Now</button>
+
         </form>
 
     </div>
+
+</section>
+
+<!-- MAP -->
+<section style="padding:20px">
+    <iframe 
+        src="https://maps.google.com/maps?q=tunis&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%" height="300" style="border:0;">
+    </iframe>
 </section>
 
 </body>
