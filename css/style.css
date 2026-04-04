@@ -19,6 +19,26 @@ header h1 {
     font-size: 30px;
     letter-spacing: 1px;
 }
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: gold;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+}
+.logo {
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background: linear-gradient(45deg, gold, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.slogan {
+    color: #ccc;
+    font-size: 18px;
+    margin-top: 5px;
+}
 
 nav {
     margin-top: 10px;
