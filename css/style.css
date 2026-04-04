@@ -108,51 +108,98 @@ nav a:hover {
     font-weight: bold;
     font-size: 16px;
 }
+/* BACKGROUND */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #ff6600;
+}
+
+/* CONTAINER */
 .contact-container {
     display: flex;
-    gap: 30px;
-    padding: 40px;
     justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
     flex-wrap: wrap;
 }
 
+/* BOX */
 .box {
-    background: white;
+    background: rgba(255, 255, 255, 0.95);
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 15px;
     width: 350px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: 0.3s;
 }
 
+.box:hover {
+    transform: translateY(-5px);
+}
+
+/* TITLES */
 .box h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #222;
 }
 
+/* INPUTS */
 input, textarea, select {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: 0.3s;
 }
 
+input:focus, textarea:focus, select:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 5px rgba(255,102,0,0.5);
+}
+
+/* BUTTON */
 button {
     width: 100%;
     padding: 12px;
-    background: #ff6600;
+    background: linear-gradient(45deg, #ff6600, #ff8533);
     border: none;
     color: white;
     font-weight: bold;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 button:hover {
-    background: #e65c00;
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #e65c00, #ff6600);
 }
 
+/* CART */
 .cart {
     margin-top: 20px;
 }
@@ -163,8 +210,14 @@ button:hover {
 }
 
 .cart li {
-    background: #f4f4f4;
+    background: #f2f2f2;
     margin: 5px 0;
-    padding: 8px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* TOTAL */
+#total {
+    color: #ff6600;
+    font-size: 20px;
 }
